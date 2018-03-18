@@ -1,0 +1,218 @@
+/**
+ * 弹性盒子布局 水平、垂直居中
+ */
+.mix-flex-center {
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+}
+
+/**
+ * 弹性盒子布局 水平左 垂直居中
+ */
+.mix-flex-start-center {
+  .mix-flex-center;
+
+  -moz-box-pack: start;
+  -webkit-box-pack: start;
+  box-pack: start;
+}
+
+.mix-flex-start {
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+
+  -moz-box-align: start;
+  -webkit-box-align: start;
+  box-align: start;
+
+  -moz-box-pack: start;
+  -webkit-box-pack: start;
+  box-pack: start;
+}
+
+/**
+ * 弹性盒子布局box: 垂直居中，水平两端对齐 垂直居中
+ */
+.mix-flex-between-center {
+  .mix-flex-center;
+
+  -moz-box-pack: justify;
+  -webkit-box-pack: justify;
+  box-pack: justify;
+}
+
+.mix-flex-vertical-between {
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+
+  -moz-box-align: start;
+  -webkit-box-align: start;
+  box-align: start;
+
+  -moz-box-pack: justify;
+  -webkit-box-pack: justify;
+  box-pack: justify;
+}
+
+/**
+ * 弹性盒子布局box子元素属性
+ */
+.mix-flex1 {
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  box-flex: 1;
+}
+
+/**
+ * 字体超出显示省略号
+ */
+.mix-overflow-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/**
+ * 盒模型
+ */
+.mix-box-sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/**
+ * 字体大小
+ */
+.fz20{
+  font-size: px2rem(22px);
+}
+.fz22{
+  font-size: px2rem(22px);
+}
+.fz24{
+  font-size: px2rem(24px);
+}
+.fz26{
+  font-size: px2rem(26px);
+}
+.fz28{
+  font-size: px2rem(28px);
+}
+.fz30{
+  font-size: px2rem(30px);
+}
+.fz32{
+  font-size: px2rem(32px);
+}
+.fz34{
+  font-size: px2rem(34px);
+}
+.fz36{
+  font-size: px2rem(36px);
+}
+.fz38{
+  font-size: px2rem(38px);
+}
+.fz40{
+  font-size: px2rem(40px);
+}
+.fz50{
+  font-size: px2rem(50px);
+}
+
+/**
+ * 字体颜色
+ */
+.c3{
+  color: #333;
+}
+.c5{
+  color: #555;
+}
+.c6{
+  color: #666;
+}
+.c9{
+  color: #999;
+}
+.c-red{
+  color: #C4021C;
+}
+.c-blue{
+  color: #015293;
+}
+
+/**
+ * margin
+ */
+//  margin-top
+.mt10{
+  margin-top: px2rem(10px);
+}
+.mt20{
+  margin-top: px2rem(30px);
+}
+.mt30{
+  margin-top: px2rem(30px);
+}
+.mt50{
+  margin-top: px2rem(50px);
+}
+.mt60{
+  margin-top: px2rem(60px);
+}
+// margin-bottom
+.mb20{
+  margin-bottom: px2rem(20px);
+}
+.mb40{
+  margin-bottom: px2rem(40px);
+}
+/**
+ * arrow
+ */
+.right-arrow{
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-top:1px solid #9BA0A4;
+  border-right:1px solid #9BA0A4;
+  transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+}
+.padding-box{
+  width: 100%;
+  padding-left: px2rem(30px);
+  padding-right: px2rem(30px);
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  overflow: hidden;
+}
+ /**
+ * position: center
+ */
+ .center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+ }
+
+
